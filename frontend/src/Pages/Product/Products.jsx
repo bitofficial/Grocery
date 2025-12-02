@@ -60,7 +60,7 @@ const Products = () => {
     } else {
       setApplyError("Please Select Filters..!!");
       setTimeout(() => {
-        setApplyError(setApplyError());
+        setApplyError(undefined);
       }, 5000);
     }
   };
@@ -99,7 +99,10 @@ const Products = () => {
       dispatch(getAllCategoryAction());
       setHeadingCategory("Product");
     } else if (categoryId) {
-      dispatch(getAllProductsAction(price, categoryId, keyword));
+      // `categoryName` is provided in the search params and the backend
+      // products use names for `category` in the file DB, so pass the
+      // name (not the id) when filtering
+      dispatch(getAllProductsAction(price, categoryName, keyword));
       dispatch(getAllCategoryAction());
       setHeadingCategory(categoryName);
     } else {
@@ -154,7 +157,7 @@ const Products = () => {
                     {Categories &&
                       Categories.map((category) => {
                         return (
-                          <option key={category._id} value={category._id}>
+                          <option key={category._id} value={category.categoryName}>
                             {category.categoryName}
                           </option>
                         );

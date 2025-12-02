@@ -36,18 +36,26 @@ export const getAllProductsAction =
     try {
       dispatch({ type: GET_ALL_PRODUCTS_REQUEST });
       let UrlLink;
-      if (keyword != "") {
+      // normalize filterCategory: accept array or comma-separated string
+      const categoryValue = Array.isArray(filterCategory)
+        ? filterCategory.join(",")
+        : filterCategory || "";
+
+      if (keyword !== "" && keyword !== undefined) {
         UrlLink = `/api/product/getAllProducts?keyword=${keyword}`;
-      } else if (filterCategory && price) {
+      } else if (categoryValue && price && price !== "") {
         // Both category and price filter
         const gte = price.split("-")[0];
         const lte = price.split("-")[1];
-        UrlLink = `/api/product/getAllProducts?category=${filterCategory}&gte=${gte}&lte=${lte}`;
+        UrlLink = `/api/product/getAllProducts?category=${categoryValue}&gte=${gte}&lte=${lte}`;
+      } else if (categoryValue) {
+        // Category-only filter
+        UrlLink = `/api/product/getAllProducts?category=${categoryValue}`;
       } else if (price && price !== "" && price !== "0-1000") {
-        // Price filter only (when user selects a price range)
+        // Price-only filter
         const gte = price.split("-")[0];
         const lte = price.split("-")[1];
-        UrlLink = `/api/product/getAllProducts?category=&gte=${gte}&lte=${lte}`;
+        UrlLink = `/api/product/getAllProducts?gte=${gte}&lte=${lte}`;
       } else {
         UrlLink = "/api/product/getAllProducts";
       }
