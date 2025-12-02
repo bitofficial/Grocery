@@ -1,0 +1,115 @@
+[
+  {
+    "_id": "prod_1_0001",
+    "name": "Organic Bananas",
+    "rate": 1.99,
+    "stocks": 119.5,
+    "category": "Fruits",
+    "kilogramOption": [
+      "250g",
+      "500g",
+      "1kg"
+    ],
+    "public_id": "prod1_pub",
+    "url": "https://via.placeholder.com/400x300?text=Organic+Bananas",
+    "createdAt": "2025-12-02T16:00:00.000Z"
+  },
+  {
+    "_id": "prod_2_0002",
+    "name": "Red Apples",
+    "rate": 2.49,
+    "stocks": -420,
+    "category": "Fruits",
+    "kilogramOption": [
+      "500g",
+      "1kg"
+    ],
+    "public_id": "prod2_pub",
+    "url": "https://via.placeholder.com/400x300?text=Red+Apples",
+    "createdAt": "2025-12-02T15:50:00.000Z"
+  },
+  {
+    "_id": "prod_3_0003",
+    "name": "Whole Milk (1L)",
+    "rate": 0.99,
+    "stocks": -300,
+    "category": "Dairy",
+    "kilogramOption": [
+      "1L"
+    ],
+    "public_id": "prod3_pub",
+    "url": "https://via.placeholder.com/400x300?text=Whole+Milk+1L",
+    "createdAt": "2025-12-02T15:30:00.000Z"
+  },
+  {
+    "_id": "prod_4_0004",
+    "name": "Fresh Carrots",
+    "rate": 1.49,
+    "stocks": 149,
+    "category": "Vegetables",
+    "kilogramOption": [
+      "250g",
+      "500g",
+      "1kg"
+    ],
+    "public_id": "prod4_pub",
+    "url": "https://via.placeholder.com/400x300?text=Fresh+Carrots",
+    "createdAt": "2025-12-02T15:45:00.000Z"
+  },
+  {
+    "_id": "prod_5_0005",
+    "name": "Tomatoes",
+    "rate": 2.99,
+    "stocks": 100,
+    "category": "Vegetables",
+    "kilogramOption": [
+      "500g",
+      "1kg",
+      "2kg"
+    ],
+    "public_id": "prod5_pub",
+    "url": "https://via.placeholder.com/400x300?text=Tomatoes",
+    "createdAt": "2025-12-02T15:40:00.000Z"
+  },
+  {
+    "_id": "prod_6_0006",
+    "name": "Oranges",
+    "rate": 3.49,
+    "stocks": 120,
+    "category": "Fruits",
+    "kilogramOption": [
+      "500g",
+      "1kg"
+    ],
+    "public_id": "prod6_pub",
+    "url": "https://via.placeholder.com/400x300?text=Oranges",
+    "createdAt": "2025-12-02T15:35:00.000Z"
+  },
+  {
+    "_id": "prod_7_0007",
+    "name": "Yogurt (500ml)",
+    "rate": 1.29,
+    "stocks": -320,
+    "category": "Dairy",
+    "kilogramOption": [
+      "500ml"
+    ],
+    "public_id": "prod7_pub",
+    "url": "https://via.placeholder.com/400x300?text=Yogurt+500ml",
+    "createdAt": "2025-12-02T15:25:00.000Z"
+  },
+  {
+    "_id": "prod_8_0008",
+    "name": "Spinach",
+    "rate": 1.79,
+    "stocks": -410,
+    "category": "Vegetables",
+    "kilogramOption": [
+      "250g",
+      "500g"
+    ],
+    "public_id": "prod8_pub",
+    "url": "https://via.placeholder.com/400x300?text=Spinach",
+    "createdAt": "2025-12-02T15:20:00.000Z"
+  }
+]

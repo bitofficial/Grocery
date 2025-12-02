@@ -1,0 +1,20 @@
+[
+	{
+		"_id": "cat_1_fruits",
+		"categoryName": "Fruits",
+		"categoryImage": "https://via.placeholder.com/200?text=Fruits",
+		"createdAt": "2025-12-02T16:10:00.000Z"
+	},
+	{
+		"_id": "cat_2_vegetables",
+		"categoryName": "Vegetables",
+		"categoryImage": "https://via.placeholder.com/200?text=Vegetables",
+		"createdAt": "2025-12-02T16:09:00.000Z"
+	},
+	{
+		"_id": "cat_3_dairy",
+		"categoryName": "Dairy",
+		"categoryImage": "https://via.placeholder.com/200?text=Dairy",
+		"createdAt": "2025-12-02T16:08:00.000Z"
+	}
+]

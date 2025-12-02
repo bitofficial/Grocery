@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "4oiht1vtnmioqybn1",
+    "firstName": "john",
+    "lastName": "doe",
+    "email": "john@gmail.com",
+    "password": "$2b$10$43Vj0QFDTgu0ysMuG4GkkeZ/TpTaeZ98KTdxENfr2oozrUpmirp4u",
+    "role": "User",
+    "createdAt": "2025-12-02T15:42:31.789Z"
+  }
+]

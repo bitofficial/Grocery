@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "v1ltfom5kmiotf7w1",
+    "user": "4oiht1vtnmioqybn1",
+    "shippingInfo": {
+      "address": "near park square apt lko",
+      "city": "lucknow",
+      "mobileNumber": "9883499340",
+      "pinCode": "227991"
+    },
+    "total": 3280,
+    "orderItems": [
+      {
+        "id": "prod_8_0008",
+        "name": "Spinach",
+        "rate": 1.79,
+        "stocks": 90,
+        "kilogramOption": [
+          "250g",
+          "500g"
+        ],
+        "image": "https://via.placeholder.com/400x300?text=Spinach",
+        "quantity": 500,
+        "totalPrice": 895
+      },
+      {
+        "id": "prod_7_0007",
+        "name": "Yogurt (500ml)",
+        "rate": 1.29,
+        "stocks": 180,
+        "kilogramOption": [
+          "500ml"
+        ],
+        "image": "https://via.placeholder.com/400x300?text=Yogurt+500ml",
+        "quantity": 500,
+        "totalPrice": 645
+      },
+      {
+        "id": "prod_3_0003",
+        "name": "Whole Milk (1L)",
+        "rate": 0.99,
+        "stocks": 200,
+        "kilogramOption": [
+          "1L"
+        ],
+        "image": "https://via.placeholder.com/400x300?text=Whole+Milk+1L",
+        "quantity": 500,
+        "totalPrice": 495
+      },
+      {
+        "id": "prod_2_0002",
+        "name": "Red Apples",
+        "rate": 2.49,
+        "stocks": 80,
+        "kilogramOption": [
+          "500g",
+          "1kg"
+        ],
+        "image": "https://via.placeholder.com/400x300?text=Red+Apples",
+        "quantity": 500,
+        "totalPrice": 1245
+      }
+    ],
+    "orderDate": "Dec 2, 2025",
+    "status": "Processing",
+    "createdAt": "2025-12-02T16:51:39.313Z"
+  },
+  {
+    "_id": "4jt244j6imioubh43",
+    "user": "4oiht1vtnmioqybn1",
+    "shippingInfo": {
+      "address": "jkhsdfjskdjf",
+      "city": ",kdnkjsndfkj",
+      "mobileNumber": "8898889889",
+      "pinCode": "987978"
+    },
+    "total": 2.485,
+    "orderItems": [
+      {
+        "id": "prod_4_0004",
+        "name": "Fresh Carrots",
+        "rate": 1.49,
+        "stocks": 150,
+        "kilogramOption": [
+          "250g",
+          "500g",
+          "1kg"
+        ],
+        "image": "https://via.placeholder.com/400x300?text=Fresh+Carrots",
+        "quantity": 1,
+        "totalPrice": 745
+      },
+      {
+        "id": "prod_1_0001",
+        "name": "Organic Bananas",
+        "rate": 1.99,
+        "stocks": 120,
+        "kilogramOption": [
+          "250g",
+          "500g",
+          "1kg"
+        ],
+        "image": "https://via.placeholder.com/400x300?text=Organic+Bananas",
+        "quantity": 0.5,
+        "totalPrice": 0.995
+      }
+    ],
+    "orderDate": "Dec 2, 2025",
+    "status": "Processing",
+    "createdAt": "2025-12-02T17:16:44.259Z"
+  }
+]
