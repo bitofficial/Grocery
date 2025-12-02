@@ -3,9 +3,7 @@ import "./Product.css";
 import Header from "../../Components/Header/Header";
 import { BsCartXFill } from "react-icons/bs";
 import { FaCartPlus } from "react-icons/fa";
-import { BiSortUp } from "react-icons/bi";
 import Footer from "../../Components/Footer/Footer";
-import { useRef } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProductsAction } from "../../Redux/Actions/productAction";
@@ -48,21 +46,22 @@ const Products = () => {
   const [clearFilter, setClearFilter] = useState(false);
 
   const ApplyFilterBtnClick = () => {
-    if (price || FilterCategory.length != 0) {
-      // Convert category array to comma-separated string
-      const categoryString = FilterCategory.length > 0 ? FilterCategory.join(",") : "";
-      dispatch(getAllProductsAction(price, categoryString));
-      setFilterCategory([]);
-      // Keep price value, don't clear it
-      setApplyError();
-      setClearFilter(true);
-      setHeadingCategory("Products");
-    } else {
+    // If no filters selected, show error
+    if ((price === "" || price === undefined) && FilterCategory.length === 0) {
       setApplyError("Please Select Filters..!!");
       setTimeout(() => {
         setApplyError(undefined);
       }, 5000);
+      return;
     }
+
+    // If user selected filters, apply them
+    const categoryString = FilterCategory.length > 0 ? FilterCategory.join(",") : "";
+    dispatch(getAllProductsAction(price, categoryString));
+    setFilterCategory([]);
+    setApplyError();
+    setClearFilter(true);
+    setHeadingCategory("Products");
   };
 
   //Clear Filter
@@ -75,16 +74,21 @@ const Products = () => {
     }
   };
 
+  //Reset Filters (clears all filters and shows all products)
+  const resetFiltersBtnClick = () => {
+    setFilterCategory([]);
+    setPrice("");
+    setApplyError();
+    dispatch(getAllProductsAction());
+    dispatch(getAllCategoryAction());
+    setClearFilter(false);
+    setHeadingCategory("Products");
+  };
+
   //Add Product To Cart
   const [quantity, setQuantity] = useState(0.5);
   const AddToCart = (id) => {
     dispatch(addToCartAction(id, quantity));
-  };
-
-  // Toggle Filter Section
-  const filterSection = useRef();
-  const toggleFilterSection = () => {
-    filterSection.current.classList.toggle("toggle-filter");
   };
 
   //Get Search Keyword && Category
@@ -129,78 +133,74 @@ const Products = () => {
             </>
           ) : (
             <>
-              <a href="#filter-section">
-                <div
-                  id="toggle-btn"
-                  className="cart-toggle-btn"
-                  onClick={toggleFilterSection}
-                >
-                  <BiSortUp />
-                  <span>Filter</span>
-                </div>
-              </a>
-              <div
-                className="products-filter"
-                id="filter-section"
-                ref={filterSection}
-              >
-                {""}
-                <div className="category-box">
-                  <h2>Categories</h2>
-                  <select 
-                    multiple 
-                    onChange={(e) => {
-                      const selectedOptions = Array.from(e.target.selectedOptions, option => option.value);
-                      setFilterCategory(selectedOptions);
-                    }}
-                  >
-                    {Categories &&
-                      Categories.map((category) => {
-                        return (
+              <div className="products-filter-strip" id="filter-section">
+                <div className="filter-strip-content">
+                  <div className="filter-item">
+                    <label>Categories:</label>
+                    <select 
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        if (value === "") {
+                          setFilterCategory([]);
+                        } else {
+                          setFilterCategory(
+                            FilterCategory.includes(value)
+                              ? FilterCategory.filter((c) => c !== value)
+                              : [...FilterCategory, value]
+                          );
+                        }
+                      }}
+                    >
+                      <option value="">
+                        {FilterCategory.length > 0 
+                          ? `${FilterCategory.length} Selected` 
+                          : "All Categories"}
+                      </option>
+                      {Categories &&
+                        Categories.map((category) => (
                           <option key={category._id} value={category.categoryName}>
+                            {FilterCategory.includes(category.categoryName) ? "✓ " : ""}
                             {category.categoryName}
                           </option>
-                        );
-                      })}
-                  </select>
-                </div>
+                        ))}
+                    </select>
+                  </div>
 
-                <div className="price-filter">
-                  <h2>Price</h2>
-                  <select onChange={(e) => setPrice(e.target.value)}>
-                    <option value="">Price Range</option>
-                    <option value="0-20">₹ 0 - ₹ 20/Kg</option>
-                    <option value="20-40">₹ 20 - ₹ 40/Kg</option>
-                    <option value="40-60">₹ 40 - ₹ 60/Kg</option>
-                    <option value="60-80">₹ 60 - ₹ 80/Kg</option>
-                    <option value="80-100">₹ 80 - ₹ 100/Kg</option>
-                    <option value="100-120">₹ 100 - ₹ 120/Kg</option>
-                  </select>
-                </div>
+                  <div className="filter-item">
+                    <label>Price Range:</label>
+                    <select onChange={(e) => setPrice(e.target.value)}>
+                      <option value="">All Prices</option>
+                      <option value="0-20">₹0-20</option>
+                      <option value="20-40">₹20-40</option>
+                      <option value="40-60">₹40-60</option>
+                      <option value="60-80">₹60-80</option>
+                      <option value="80-100">₹80-100</option>
+                      <option value="100-120">₹100-120</option>
+                    </select>
+                  </div>
 
-                <div className="filter-btn">
-                  <button onClick={ApplyFilterBtnClick}>Apply Filter</button>
-                  {clearFilter ? (
-                    <button
-                      className="clearFilterBtn"
-                      onClick={clearFilterBtnClick}
-                    >
-                      Clear Filter
+                  <div className="filter-actions-strip">
+                    <button className="btn-apply-strip" onClick={ApplyFilterBtnClick}>
+                      Apply
                     </button>
-                  ) : (
-                    ""
-                  )}
+                    <button 
+                      className="btn-reset-strip" 
+                      onClick={resetFiltersBtnClick}
+                      // disabled={FilterCategory.length === 0 && price === ""}
+                    >
+                      Reset
+                    </button>
+                    {clearFilter && (
+                      <button className="btn-clear-strip" onClick={clearFilterBtnClick}>
+                        Clear All
+                      </button>
+                    )}
+                  </div>
 
-                  {ApplyError ? (
-                    <h6 className="applyFilterError ">
-                      Please Select Filter First..!!
-                    </h6>
-                  ) : (
-                    ""
+                  {ApplyError && (
+                    <div className="filter-error-strip">{ApplyError}</div>
                   )}
                 </div>
-
-                {""}
               </div>
 
               <div className="products-list">
