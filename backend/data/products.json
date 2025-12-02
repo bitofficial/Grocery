@@ -5,13 +5,9 @@
     "rate": 1.99,
     "stocks": 119.5,
     "category": "Fruits",
-    "kilogramOption": [
-      "250g",
-      "500g",
-      "1kg"
-    ],
+    "kilogramOption": ["250g","500g","1kg"],
     "public_id": "prod1_pub",
-    "url": "https://via.placeholder.com/400x300?text=Organic+Bananas",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_PxYiznzHk4AIFg4DbjYYYOordau_yUNKkQ&s",
     "createdAt": "2025-12-02T16:00:00.000Z"
   },
   {
@@ -20,12 +16,9 @@
     "rate": 2.49,
     "stocks": -420,
     "category": "Fruits",
-    "kilogramOption": [
-      "500g",
-      "1kg"
-    ],
+    "kilogramOption": ["500g","1kg"],
     "public_id": "prod2_pub",
-    "url": "https://via.placeholder.com/400x300?text=Red+Apples",
+    "url": "https://png.pngtree.com/png-vector/20240204/ourmid/pngtree-a-group-of-red-apples-png-image_11607574.png",
     "createdAt": "2025-12-02T15:50:00.000Z"
   },
   {
@@ -34,11 +27,9 @@
     "rate": 0.99,
     "stocks": -300,
     "category": "Dairy",
-    "kilogramOption": [
-      "1L"
-    ],
+    "kilogramOption": ["1L"],
     "public_id": "prod3_pub",
-    "url": "https://via.placeholder.com/400x300?text=Whole+Milk+1L",
+    "url": "https://cremgelato.com/cdn/shop/files/Lactel_Whole_Milk_1L_Product_Page_at_Crem_Gelato2.png?v=1746092110&width=1445",
     "createdAt": "2025-12-02T15:30:00.000Z"
   },
   {
@@ -47,13 +38,9 @@
     "rate": 1.49,
     "stocks": 149,
     "category": "Vegetables",
-    "kilogramOption": [
-      "250g",
-      "500g",
-      "1kg"
-    ],
+    "kilogramOption": ["250g","500g","1kg"],
     "public_id": "prod4_pub",
-    "url": "https://via.placeholder.com/400x300?text=Fresh+Carrots",
+    "url": "https://static.vecteezy.com/system/resources/previews/010/981/244/large_2x/whole-carrots-and-round-pieces-isolated-on-white-background-the-carrot-is-a-root-vegetable-usually-orange-color-though-purple-black-red-white-and-yellow-depend-on-species-photo.jpg",
     "createdAt": "2025-12-02T15:45:00.000Z"
   },
   {
@@ -62,13 +49,9 @@
     "rate": 2.99,
     "stocks": 100,
     "category": "Vegetables",
-    "kilogramOption": [
-      "500g",
-      "1kg",
-      "2kg"
-    ],
+    "kilogramOption": ["500g","1kg","2kg"],
     "public_id": "prod5_pub",
-    "url": "https://via.placeholder.com/400x300?text=Tomatoes",
+    "url": "https://static.vecteezy.com/system/resources/thumbnails/048/051/186/small/tomatoes-on-transparent-background-png.png",
     "createdAt": "2025-12-02T15:40:00.000Z"
   },
   {
@@ -77,12 +60,9 @@
     "rate": 3.49,
     "stocks": 120,
     "category": "Fruits",
-    "kilogramOption": [
-      "500g",
-      "1kg"
-    ],
+    "kilogramOption": ["500g","1kg"],
     "public_id": "prod6_pub",
-    "url": "https://via.placeholder.com/400x300?text=Oranges",
+    "url": "https://static.vecteezy.com/system/resources/previews/050/704/808/non_2x/oranges-in-a-bowl-isolated-on-transparent-background-png.png",
     "createdAt": "2025-12-02T15:35:00.000Z"
   },
   {
@@ -91,11 +71,9 @@
     "rate": 1.29,
     "stocks": -320,
     "category": "Dairy",
-    "kilogramOption": [
-      "500ml"
-    ],
+    "kilogramOption": ["500ml"],
     "public_id": "prod7_pub",
-    "url": "https://via.placeholder.com/400x300?text=Yogurt+500ml",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpZk9zIdk35n-4LaswwX3wTEqthxklnibFw&s",
     "createdAt": "2025-12-02T15:25:00.000Z"
   },
   {
@@ -104,12 +82,9 @@
     "rate": 1.79,
     "stocks": -410,
     "category": "Vegetables",
-    "kilogramOption": [
-      "250g",
-      "500g"
-    ],
+    "kilogramOption": ["250g","500g"],
     "public_id": "prod8_pub",
-    "url": "https://via.placeholder.com/400x300?text=Spinach",
+    "url": "https://static.vecteezy.com/system/resources/thumbnails/032/325/410/small/bundle-of-fresh-spinach-isolated-on-transparent-background-file-cut-out-ai-generated-png.png",
     "createdAt": "2025-12-02T15:20:00.000Z"
   }
 ]
