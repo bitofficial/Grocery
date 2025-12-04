@@ -1,0 +1,287 @@
+/* Page wrapper */
+.og-page-wrapper {
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #222;
+}
+
+/* HERO */
+.og-hero-section {
+  padding: 4rem 0 3rem;
+  background-color: #fffaf1;
+}
+
+.og-hero-badge {
+  display: inline-block;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background: #e8f9e7;
+  color: #4caf50;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.og-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.og-hero-subtitle {
+  font-size: 0.95rem;
+  color: #777;
+  max-width: 380px;
+  margin-bottom: 1rem;
+}
+
+.og-hero-price {
+  margin-bottom: 1.5rem;
+}
+
+.og-hero-price-main {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4caf50;
+  margin-right: 0.25rem;
+}
+
+.og-hero-price-sub {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.og-hero-btn {
+  background: #7ecb3b;
+  border-radius: 30px;
+  padding: 0.6rem 1.8rem;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.og-hero-btn:hover {
+  background: #6ab02f;
+}
+
+/* Hero image */
+.og-hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.og-hero-circle {
+  position: absolute;
+  inset: 10% 8%;
+  border-radius: 50%;
+  background: #ffeccb;
+  z-index: 1;
+}
+
+.og-hero-image {
+  position: relative;
+  z-index: 2;
+  zoom: 1.3;
+  mix-blend-mode: multiply;
+}
+
+/* INFO STRIP */
+.og-info-strip {
+  background: #ffffff;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.og-info-item {
+  padding: 0.5rem 0;
+}
+
+.og-info-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  background: #7ecb3b8b;
+  /* opacity: 0.15; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 1.1;
+}
+
+.og-info-item h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.og-info-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Sections */
+.og-section {
+  padding: 3rem 0;
+}
+
+/* Top products */
+.og-top-products {
+  background: #fffefb;
+}
+
+.og-product-card {
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 12px;
+  padding: 1.2rem 0.8rem;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.og-product-card:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
+
+.og-product-thumb {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+}
+
+.og-product-label {
+  font-size: 0.8rem;
+  color: #8c8c8c;
+  margin-bottom: 0.2rem;
+}
+
+.og-product-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.og-product-price-small {
+  font-size: 0.85rem;
+  color: #4caf50;
+}
+
+/* Featured section */
+.og-featured-section {
+  background: #ffffff;
+}
+
+.og-featured-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.og-featured-tabs {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.og-featured-tab {
+  border-radius: 20px;
+  border: 1px solid #eee;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.og-featured-tab-active {
+  background: #7ecb3b;
+  border-color: #7ecb3b;
+  color: #fff;
+}
+
+.og-featured-card {
+  border-radius: 12px;
+  border: 1px solid #f3f3f3;
+  padding: 1.2rem 0.8rem;
+  background: #ffffff;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.og-featured-card:hover {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+.og-featured-thumb {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+
+.og-featured-tag {
+  font-size: 0.75rem;
+  color: #9c9c9c;
+  margin-bottom: 0.15rem;
+}
+
+.og-featured-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.og-featured-price-row {
+  font-size: 0.9rem;
+}
+
+.og-featured-price {
+  color: #4caf50;
+  font-weight: 700;
+  margin-right: 0.35rem;
+}
+
+.og-featured-old-price {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .og-hero-section {
+    padding-top: 3rem;
+  }
+
+  .og-hero-title {
+    font-size: 2.3rem;
+  }
+
+  .og-hero-subtitle {
+    max-width: 100%;
+  }
+}
+
+.og-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Ensure containers aren't squeezed */
+.og-info-strip .container,
+.og-top-products .container,
+.og-featured-section .container {
+  max-width: 1140px;
+}
+
+/* Allow cards to fill full height in a row if you want equal heights */
+.og-product-card,
+.og-featured-card {
+  height: 100%;
+}

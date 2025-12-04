@@ -1,0 +1,352 @@
+[
+  {
+    "id": "fruit-2",
+    "product_id": "F002",
+    "product_name": "Yellow Bananas",
+    "product_description": "Perfectly ripe, potassium-rich bananas. Perfect for energy boost and smoothies.",
+    "product_price": 60,
+    "qty": 0,
+    "image_url": "https://images2.alphacoders.com/133/thumb-350-1338260.webp",
+    "category": "Fruits"
+  },
+  {
+    "id": "fruit-3",
+    "product_id": "F003",
+    "product_name": "Sweet Oranges",
+    "product_description": "Juicy and sweet oranges loaded with vitamin C. Premium quality from coastal farms.",
+    "product_price": 100,
+    "qty": 32,
+    "image_url": "https://t4.ftcdn.net/jpg/02/79/60/69/360_F_279606999_4fItjv1RGj7ogujzQSZqB9hfkbyzxJ4r.jpg",
+    "category": "Fruits"
+  },
+  {
+    "id": "fruit-4",
+    "product_id": "F004",
+    "product_name": "Strawberries",
+    "product_description": "Delicious, fresh strawberries. Packed with antioxidants and natural sweetness.",
+    "product_price": 250,
+    "qty": 0,
+    "image_url": "https://img.freepik.com/free-photo/fresh-strawberries-bowl-wooden-table_1150-37962.jpg?semt=ais_hybrid&w=740&q=80",
+    "category": "Fruits"
+  },
+  {
+    "id": "fruit-5",
+    "product_id": "F005",
+    "product_name": "Fresh Grapes",
+    "product_description": "Seedless green grapes, refreshing and sweet. Perfect for family snacking.",
+    "product_price": 180,
+    "qty": 70,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNPibZLqW3oUw6tnsURHcauyDy9qYDWPbUw&s",
+    "category": "Fruits"
+  },
+  {
+    "id": "fruit-6",
+    "product_id": "F006",
+    "product_name": "Mangoes (Alphonso)",
+    "product_description": "Premium Alphonso mangoes, king of fruits. Sweet, aromatic, and creamy.",
+    "product_price": 350,
+    "qty": 25,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAGKljhrQxtf2--UxfAGyj7jMHwTgWDpKkhQ&s",
+    "category": "Fruits"
+  },
+  {
+    "id": "veg-1",
+    "product_id": "V001",
+    "product_name": "Fresh Tomatoes",
+    "product_description": "Ripe, juicy tomatoes perfect for curries, salads, and cooking. Farm fresh daily.",
+    "product_price": 40,
+    "qty": 200,
+    "image_url": "https://cdn.pixabay.com/photo/2016/03/26/16/44/tomatoes-1280859_640.jpg",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-2",
+    "product_id": "V002",
+    "product_name": "Green Leafy Spinach",
+    "product_description": "Organic spinach rich in iron and nutrients. Perfect for healthy eating.",
+    "product_price": 50,
+    "qty": 90,
+    "image_url": "https://t3.ftcdn.net/jpg/16/41/21/28/360_F_1641212841_UnVYDq33NIZEoFzizIBWX5GNqZYyp3Ck.jpg",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-3",
+    "product_id": "V003",
+    "product_name": "Carrots",
+    "product_description": "Crunchy, sweet carrots loaded with beta-carotene. Great for salads and cooking.",
+    "product_price": 45,
+    "qty": 150,
+    "image_url": "https://thumbs.dreamstime.com/b/carrots-pile-carrot-field-background-367754204.jpg",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-4",
+    "product_id": "V004",
+    "product_name": "Bell Peppers (Mixed)",
+    "product_description": "Colorful bell peppers - red, yellow, green. Fresh and crisp.",
+    "product_price": 120,
+    "qty": 80,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrP8hGFXcs5RBqxBvEUSswvmAuQM1j6LSCQ&s",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-5",
+    "product_id": "V005",
+    "product_name": "Broccoli",
+    "product_description": "Fresh, green broccoli. High in vitamins and minerals. Perfect for healthy meals.",
+    "product_price": 90,
+    "qty": 65,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRZmYlPA9ziQzap4KV211xEx2To90XdfR_Q&s",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-6",
+    "product_id": "V006",
+    "product_name": "Potatoes",
+    "product_description": "Fresh potatoes, perfect for everyday cooking. Versatile kitchen staple.",
+    "product_price": 35.7,
+    "qty": 300,
+    "image_url": "https://img.freepik.com/premium-photo/vegetable-potato-hd-8k-wallpaper-stock-photographic-image_915071-70798.jpg?w=360",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-7",
+    "product_id": "V007",
+    "product_name": "Onions (1kg)",
+    "product_description": "Golden onions, essential for Indian cooking. Fresh from farms.",
+    "product_price": 30,
+    "qty": 250,
+    "image_url": "https://media.gettyimages.com/id/171158822/photo/red-onions-background.jpg?s=612x612&w=gi&k=20&c=3azenP92l_YQBlfKvyk6HNZTiv1banRJsr-k7Ci58N8=",
+    "category": "Vegetables"
+  },
+  {
+    "id": "veg-8",
+    "product_id": "V008",
+    "product_name": "Garlic (500g)",
+    "product_description": "Fresh garlic bulbs, aromatic and healthy. Adds flavor to every dish.",
+    "product_price": 50,
+    "qty": 120,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdVm3I31GH0vDh0puULcHYMtyTVUfVfg918A&s",
+    "category": "Vegetables"
+  },
+  {
+    "id": "dairy-1",
+    "product_id": "D001",
+    "product_name": "Full Cream Milk (1L)",
+    "product_description": "Fresh, pasteurized full cream milk. Rich in calcium and nutrients.",
+    "product_price": 55,
+    "qty": 180,
+    "image_url": "https://tiimg.tistatic.com/fp/2/007/649/good-source-of-vitamin-calcium-healthy-pure-fresh-white-cow-milk-348.jpg",
+    "category": "Dairy"
+  },
+  {
+    "id": "dairy-2",
+    "product_id": "D002",
+    "product_name": "Yogurt (500g)",
+    "product_description": "Creamy, probiotic yogurt. Perfect for breakfast and cooking.",
+    "product_price": 50,
+    "qty": 139,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdjsgSoXUNoofp4CDadiONKm7mAVv0opmQgA&s",
+    "category": "Dairy"
+  },
+  {
+    "id": "dairy-3",
+    "product_id": "D003",
+    "product_name": "Cheese Slices (200g)",
+    "product_description": "Melting cheese slices for sandwiches and burgers. Premium quality.",
+    "product_price": 140,
+    "qty": 69,
+    "image_url": "https://www.shutterstock.com/image-photo/cheese-slices-on-white-background-260nw-330914774.jpg",
+    "category": "Dairy"
+  },
+  {
+    "id": "dairy-4",
+    "product_id": "D004",
+    "product_name": "Paneer (400g)",
+    "product_description": "Fresh paneer, perfect for Indian curries and grilling. High in protein.",
+    "product_price": 220,
+    "qty": 94,
+    "image_url": "https://5.imimg.com/data5/ANDROID/Default/2022/3/QZ/VP/OQ/15200528/product-jpeg.jpg",
+    "category": "Dairy"
+  },
+  {
+    "id": "dairy-5",
+    "product_id": "D005",
+    "product_name": "Butter (500g)",
+    "product_description": "Creamy, fresh butter made from pure cream. For baking and cooking.",
+    "product_price": 320,
+    "qty": 50,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8AdNA1_oieRzS6mRspS0YqGyumaNK-7YDw&s",
+    "category": "Dairy"
+  },
+  {
+    "id": "bakery-1",
+    "product_id": "B001",
+    "product_name": "Whole Wheat Bread",
+    "product_description": "Fresh whole wheat bread, high in fiber. Baked daily.",
+    "product_price": 40,
+    "qty": 80,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDS6L-17AbxbjxREHBg9WRZ2dVyRyQ4VCyg&s",
+    "category": "Bakery"
+  },
+  {
+    "id": "bakery-2",
+    "product_id": "B002",
+    "product_name": "Multigrain Bread",
+    "product_description": "Nutritious multigrain bread with seeds. Healthy breakfast choice.",
+    "product_price": 60,
+    "qty": 65,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZ69iJUHowbiqR4eOEymmWlaX7M71rcYzZg&s",
+    "category": "Bakery"
+  },
+  {
+    "id": "bakery-3",
+    "product_id": "B003",
+    "product_name": "Croissants (Pack of 2)",
+    "product_description": "Buttery, flaky croissants. Perfect for breakfast with coffee.",
+    "product_price": 80,
+    "qty": 50,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv2bZ6cPsJK2_D2HK1oF1VqPFw0IVQ_wMLzQ&s",
+    "category": "Bakery"
+  },
+  {
+    "id": "bakery-4",
+    "product_id": "B004",
+    "product_name": "Biscuits & Cookies",
+    "product_description": "Assorted cookies and biscuits. Tea-time favorite.",
+    "product_price": 120,
+    "qty": 100,
+    "image_url": "https://www.shutterstock.com/image-photo/assortment-baked-goods-displayed-on-600nw-2575371219.jpg",
+    "category": "Bakery"
+  },
+  {
+    "id": "beverage-1",
+    "product_id": "BV001",
+    "product_name": "Orange Juice (1L)",
+    "product_description": "Fresh orange juice, no added sugar. 100% natural.",
+    "product_price": 85,
+    "qty": 75,
+    "image_url": "https://t3.ftcdn.net/jpg/01/00/86/04/360_F_100860401_gv6dItKnW73WVRO7bViePzIbRgHCROEx.jpg",
+    "category": "Beverages"
+  },
+  {
+    "id": "beverage-2",
+    "product_id": "BV002",
+    "product_name": "Green Tea (25 bags)",
+    "product_description": "Premium green tea bags. Antioxidant-rich and healthy.",
+    "product_price": 150,
+    "qty": 60,
+    "image_url": "https://m.media-amazon.com/images/I/614Vy2M-YUL._AC_UF894,1000_QL80_.jpg",
+    "category": "Beverages"
+  },
+  {
+    "id": "beverage-3",
+    "product_id": "BV003",
+    "product_name": "Coffee Powder (100g)",
+    "product_description": "Freshly roasted coffee powder. Rich aroma and taste.",
+    "product_price": 180,
+    "qty": 80,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1gF683R5DMrfzmaC6rRsvDYCeAPP_mYsig&s",
+    "category": "Beverages"
+  },
+  {
+    "id": "beverage-4",
+    "product_id": "BV004",
+    "product_name": "Mineral Water (1.5L)",
+    "product_description": "Pure mineral water for everyday hydration. Pack of 1.",
+    "product_price": 20,
+    "qty": 400,
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2023/4/297804538/UX/RS/WP/150430118/61z-pzj9hml-sl1500--500x500.jpg",
+    "category": "Beverages"
+  },
+  {
+    "id": "beverage-5",
+    "product_id": "BV005",
+    "product_name": "Iced Tea Mix",
+    "product_description": "Instant iced tea mix. Refreshing summer drink.",
+    "product_price": 120,
+    "qty": 45,
+    "image_url": "https://m.media-amazon.com/images/I/61ix6CmNcvL._AC_UF350,350_QL80_.jpg",
+    "category": "Beverages"
+  },
+  {
+    "id": "snack-1",
+    "product_id": "S001",
+    "product_name": "Potato Chips (200g)",
+    "product_description": "Crispy potato chips with sea salt. Perfect snacking experience.",
+    "product_price": 70,
+    "qty": 150,
+    "image_url": "https://t3.ftcdn.net/jpg/09/85/22/54/360_F_985225412_IXWREmnJwhV9h9zTuTxPSgpm6UDhqrbs.jpg",
+    "category": "Snacks"
+  },
+  {
+    "id": "snack-2",
+    "product_id": "S002",
+    "product_name": "Peanuts (200g)",
+    "product_description": "Roasted, salted peanuts. High in protein and healthy fats.",
+    "product_price": 90,
+    "qty": 120,
+    "image_url": "https://5.imimg.com/data5/FT/CE/MY-22925618/java-peanuts.jpg",
+    "category": "Snacks"
+  },
+  {
+    "id": "snack-3",
+    "product_id": "S003",
+    "product_name": "Granola Cereal (400g)",
+    "product_description": "Healthy granola cereal with oats and nuts. Perfect breakfast.",
+    "product_price": 180,
+    "qty": 76,
+    "image_url": "https://lifeloveandgoodfood.com/wp-content/uploads/2019/02/Nutty-Granola_0794-1200x1200-1-300x300.jpg",
+    "category": "Snacks"
+  },
+  {
+    "id": "snack-4",
+    "product_id": "S004",
+    "product_name": "Almonds (200g)",
+    "product_description": "Premium almonds, rich in nutrients. Perfect for healthy snacking.",
+    "product_price": 350,
+    "qty": 63,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgzCJIjKAolcfga9IHVAroDrIgLsZqDptgrQ&s",
+    "category": "Snacks"
+  },
+  {
+    "id": "snack-5",
+    "product_id": "S005",
+    "product_name": "Dark Chocolate (100g)",
+    "product_description": "Premium dark chocolate with 70% cocoa. Deliciously indulgent.",
+    "product_price": 120,
+    "qty": 95,
+    "image_url": "https://thumbs.dreamstime.com/b/assortment-dark-milk-chocolate-stack-sweets-beans-stone-background-spices-cinnamon-72802395.jpg",
+    "category": "Snacks"
+  },
+  {
+    "id": "snack-6",
+    "product_id": "S006",
+    "product_name": "Cashews (200g)",
+    "product_description": "Roasted cashews, buttery and delicious. Premium quality nuts.",
+    "product_price": 420,
+    "qty": 43,
+    "image_url": "https://www.shutterstock.com/image-photo/cashew-nuts-wooden-bowl-on-260nw-1427801939.jpg",
+    "category": "Snacks"
+  },
+  {
+    "id": "76c727d0-1db0-4d21-9672-26dc67e53462",
+    "product_id": "76c727d0-1db0-4d21-9672-26dc67e53462",
+    "product_name": "Buns",
+    "product_description": "Barkey Fresh Buns",
+    "product_price": 25,
+    "qty": 23,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjMSog8hssFI5mngHvjdpsqKIVfl2j4Nk1VQ&s",
+    "category": "Bakery"
+  },
+  {
+    "id": "3d313455-4f43-4874-a7dd-7d566636e205",
+    "product_id": "3d313455-4f43-4874-a7dd-7d566636e205",
+    "product_name": "Sugar Cookie",
+    "product_description": "Sweet",
+    "product_price": 25,
+    "qty": 94,
+    "image_url": "https://www.verybestbaking.com/sites/g/files/jgfbjl326/files/srh_recipes/4bc5edb86285aadc28069f51d9e98974.jpg",
+    "category": "Bakery"
+  }
+]

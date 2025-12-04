@@ -1,0 +1,72 @@
+[
+  {
+    "id": "5cfb129d-f863-4c16-835a-39a0c38f0940",
+    "name": "Anuu",
+    "email": "ak@gmail.com",
+    "password": "$2b$10$L.B.PvKjy6TumMDxjpJ1H.iS97d/ujX1Q4mPhkSLjnWeQ6Eds0oEq",
+    "role": "customer"
+  },
+  {
+    "id": "c07021b1-1d6e-4ba1-a157-09964c80bd1b",
+    "name": "Kavuri Neha",
+    "email": "neha@gmail.com",
+    "password": "$2b$10$AcOotELj75ZMICHOm9r5TOOGVwnElVvCJRFtC4Z.MHVKc5zEsI6Wu",
+    "role": "customer"
+  },
+  {
+    "id": "38614922-f550-4f28-be04-72bc6e6334f7",
+    "name": "Anukeerthana",
+    "email": "anukeerthana.mb@gmail.com",
+    "password": "$2b$10$gwWAFu.sxqVSIy0A3zF/T.gLnYubrCVFT0DFKO3xhO9VeuBqDa50O",
+    "role": "customer"
+  },
+  {
+    "id": "7410796e-68d8-4c0f-bf18-2f6fa427e1fa",
+    "name": "karthik",
+    "email": "pabbathikarthikeya13@gmail.com",
+    "password": "$2b$10$BDrFGKEB/44Z4Dpak0qBHO5ZN7vS22.AOkfBLii9a6cdniN9eSCAe",
+    "role": "customer"
+  },
+  {
+    "id": "2a8958e8-9079-453e-a042-10ccbb2982f6",
+    "name": "Sachin",
+    "email": "sach@gmail.com",
+    "password": "$2b$10$MxjFsjD4r9tCxjKSa9/njepw6.1XhpUMqZbu54AYaDYshtoHhxZLC",
+    "role": "customer"
+  },
+  {
+    "id": "f819bcd2-a029-4d27-b77c-d4872f3cb415",
+    "name": "aa",
+    "email": "aa@gmail.com",
+    "password": "$2b$10$vFRNinWkk5Vaq65zoBRRwuSOeI6PDvigGHo0cecQ3I1DfKF.WDZmO",
+    "role": "customer"
+  },
+  {
+    "id": "ecc780e7-7e37-435c-be44-eea97f27d464",
+    "name": "Raghvendraa",
+    "email": "raghvendra1@gmail.com",
+    "password": "$2b$10$HlB6UoWOwmDJujOP.O2ZgO.hfbz2tXt8B1PmFtsdXW7XlU9CczcQu",
+    "role": "customer"
+  },
+  {
+    "id": "26cc9301-b4f1-4905-bd4b-5be7f47fd7fb",
+    "name": "Raghvendra New",
+    "email": "raghvendra@gmail.com",
+    "password": "$2b$10$ZRZ4uThf/QKqcpQetnbeou.HqesKLYr/t.K02Dy1ChrNeY0F6bGxC",
+    "role": "customer"
+  },
+  {
+    "id": "0224c359-4624-4ae6-8536-12523a0a5898",
+    "name": "Raghvendra new two",
+    "email": "raghvendranew@gmail.com",
+    "password": "$2b$10$96sS7KifERGW9STBfdyozOIiCB1Jxm2NEtP6AHChG0QOEoclQPzlG",
+    "role": "customer"
+  },
+  {
+    "id": "admin-0001",
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$s17J3BeW73fMI/yr9KfJ4OIcfGc0AgNzLJR.ULl2FbISfiT6VBFZO",
+    "role": "admin"
+  }
+]
