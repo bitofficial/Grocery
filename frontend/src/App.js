@@ -32,6 +32,10 @@ import AdminOrderDetails from "./Pages/Admin/Orders/OrderDetails";
 import UpdateUser from "./Pages/Admin/Users/UpdateUser";
 import ReviewsList from "./Pages/Admin/Reviews/ReviewsList";
 import ProductDetails from "./Pages/Product/ProductDetails";
+import AdminLogin from "./Admin/Pages/AdminLogin";
+import AdminDashboard from "./Admin/Pages/AdminDashboard";
+import ProductManagement from "./Admin/Pages/ProductManagement";
+import OrderManagement from "./Admin/Pages/OrderManagement";
 
 const App = () => {
   const { isAuthUser, user } = useSelector((state) => state.user);
@@ -44,6 +48,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* New Admin Login Route */}
+        <Route path="/admin/login" element={<AdminLogin />} />
+
         <Route path="/" element={<Home />} />
         <Route path="/Signup" element={!isAuthUser ? <SignUp /> : <Home />} />
         <Route path="/Login" element={!isAuthUser ? <Login /> : <Home />} />
@@ -81,6 +88,11 @@ const App = () => {
 
         <Route path="/reviews/all" element={<AllReviews />} />
         <Route path="/about" element={<About />} />
+
+        {/* New Admin Dashboard Routes */}
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/products-management" element={<ProductManagement />} />
+        <Route path="/admin/orders-management" element={<OrderManagement />} />
 
         {user && user.role === "Admin" ? (
           <>

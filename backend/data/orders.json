@@ -1,112 +1,71 @@
 [
   {
-    "_id": "v1ltfom5kmiotf7w1",
+    "_id": "t5o75begcmiozojqc",
     "user": "4oiht1vtnmioqybn1",
     "shippingInfo": {
-      "address": "near park square apt lko",
-      "city": "lucknow",
-      "mobileNumber": "9883499340",
-      "pinCode": "227991"
+      "address": "djfhksdkfk",
+      "city": "sultnpur",
+      "mobileNumber": "8988980908",
+      "pinCode": "227622"
     },
-    "total": 3280,
+    "total": 6.48,
     "orderItems": [
       {
-        "id": "prod_8_0008",
-        "name": "Spinach",
-        "rate": 1.79,
-        "stocks": 90,
+        "id": "prod_5_0005",
+        "name": "Tomatoes",
+        "rate": 2.99,
+        "stocks": 100,
+        "kilogramOption": [
+          "500g",
+          "1kg",
+          "2kg"
+        ],
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/048/051/186/small/tomatoes-on-transparent-background-png.png",
+        "quantity": 1,
+        "totalPrice": 2.99
+      },
+      {
+        "id": "prod_6_0006",
+        "name": "Oranges",
+        "rate": 3.49,
+        "stocks": 120,
+        "kilogramOption": [
+          "500g",
+          "1kg"
+        ],
+        "image": "https://static.vecteezy.com/system/resources/previews/050/704/808/non_2x/oranges-in-a-bowl-isolated-on-transparent-background-png.png",
+        "quantity": 1,
+        "totalPrice": 3.49
+      }
+    ],
+    "orderDate": "Dec 3, 2025",
+    "createdAt": "2025-12-02T19:46:52.260Z"
+  },
+  {
+    "_id": "fvlcph0qimip0brhe",
+    "user": "4oiht1vtnmioqybn1",
+    "shippingInfo": {
+      "address": "dlkjdkgk",
+      "city": "eritjerotj",
+      "mobileNumber": "8989889998",
+      "pinCode": "232234"
+    },
+    "total": 7500,
+    "orderItems": [
+      {
+        "id": "98049zfgymip0amw0",
+        "name": "corn",
+        "rate": "15",
+        "stocks": "5",
         "kilogramOption": [
           "250g",
           "500g"
         ],
-        "image": "https://via.placeholder.com/400x300?text=Spinach",
         "quantity": 500,
-        "totalPrice": 895
-      },
-      {
-        "id": "prod_7_0007",
-        "name": "Yogurt (500ml)",
-        "rate": 1.29,
-        "stocks": 180,
-        "kilogramOption": [
-          "500ml"
-        ],
-        "image": "https://via.placeholder.com/400x300?text=Yogurt+500ml",
-        "quantity": 500,
-        "totalPrice": 645
-      },
-      {
-        "id": "prod_3_0003",
-        "name": "Whole Milk (1L)",
-        "rate": 0.99,
-        "stocks": 200,
-        "kilogramOption": [
-          "1L"
-        ],
-        "image": "https://via.placeholder.com/400x300?text=Whole+Milk+1L",
-        "quantity": 500,
-        "totalPrice": 495
-      },
-      {
-        "id": "prod_2_0002",
-        "name": "Red Apples",
-        "rate": 2.49,
-        "stocks": 80,
-        "kilogramOption": [
-          "500g",
-          "1kg"
-        ],
-        "image": "https://via.placeholder.com/400x300?text=Red+Apples",
-        "quantity": 500,
-        "totalPrice": 1245
+        "totalPrice": 7500
       }
     ],
-    "orderDate": "Dec 2, 2025",
-    "status": "Processing",
-    "createdAt": "2025-12-02T16:51:39.313Z"
-  },
-  {
-    "_id": "4jt244j6imioubh43",
-    "user": "4oiht1vtnmioqybn1",
-    "shippingInfo": {
-      "address": "jkhsdfjskdjf",
-      "city": ",kdnkjsndfkj",
-      "mobileNumber": "8898889889",
-      "pinCode": "987978"
-    },
-    "total": 2.485,
-    "orderItems": [
-      {
-        "id": "prod_4_0004",
-        "name": "Fresh Carrots",
-        "rate": 1.49,
-        "stocks": 150,
-        "kilogramOption": [
-          "250g",
-          "500g",
-          "1kg"
-        ],
-        "image": "https://via.placeholder.com/400x300?text=Fresh+Carrots",
-        "quantity": 1,
-        "totalPrice": 745
-      },
-      {
-        "id": "prod_1_0001",
-        "name": "Organic Bananas",
-        "rate": 1.99,
-        "stocks": 120,
-        "kilogramOption": [
-          "250g",
-          "500g",
-          "1kg"
-        ],
-        "image": "https://via.placeholder.com/400x300?text=Organic+Bananas",
-        "quantity": 0.5,
-        "totalPrice": 0.995
-      }
-    ],
-    "orderDate": "Dec 2, 2025",
-    "status": "Processing",
-    "createdAt": "2025-12-02T17:16:44.259Z"
+    "orderDate": "Dec 3, 2025",
+    "createdAt": "2025-12-02T20:04:55.394Z"
   }
 ]

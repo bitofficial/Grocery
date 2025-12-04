@@ -14,6 +14,7 @@ const connectDB = require("./Config/connection");
 const userRoutes = require("./routes/userRoute");
 const productRoute = require("./routes/productRoute");
 const categoryRoute = require("./routes/categoryRoute");
+const orderRoute = require("./routes/orderRoute");
 const cors = require("cors");
 
 //Body Parser
@@ -49,6 +50,7 @@ cloudinary.config({
 app.use("/api/user", userRoutes);
 app.use("/api/product", productRoute);
 app.use("/api/category", categoryRoute);
+app.use("/api/order", orderRoute);
 
 //Access Front End Static Files
 app.use(express.static(path.join(__dirname, "../frontend/build")));

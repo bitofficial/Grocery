@@ -24,6 +24,7 @@ const {
   adminGetAllUsers,
   AdminDeleteUser,
   adminUpdateUser,
+  adminLogin,
 } = require("../Controllers/userController");
 const isAuthorized = require("../middleware/isAuthorized");
 const isAuthUser = require("../middleware/isAuthUser");
@@ -31,6 +32,7 @@ const isAuthUser = require("../middleware/isAuthUser");
 //Public Route
 route.post("/register", userRegister);
 route.post("/login", userLogin);
+route.post("/admin/login", adminLogin);
 route.post("/send-reset-password-email", sendUserPasswordResetEmail);
 route.post("/reset-password/:id/:token", userPasswordReset);
 

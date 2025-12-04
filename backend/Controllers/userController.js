@@ -272,6 +272,47 @@ const adminUpdateUser = async (req, res) => {
   }
 };
 
+// Admin Login (Simplified - in production, you'd validate against a database)
+const adminLogin = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    // Simple admin credentials (in production, query from database)
+    const adminCredentials = {
+      email: "admin@grocery.com",
+      password: "admin123",
+      name: "Admin",
+      role: "Admin",
+    };
+
+    if (email === adminCredentials.email && password === adminCredentials.password) {
+      // Generate JWT token for admin
+      const token = jwt.sign(
+        { id: "admin", email: adminCredentials.email, role: "Admin" },
+        process.env.JWT_SECRET || "your_jwt_secret_key",
+        { expiresIn: "7d" }
+      );
+
+      res.status(200).json({
+        success: true,
+        message: "Admin Login Successfully",
+        token,
+        admin: {
+          id: "admin",
+          email: adminCredentials.email,
+          name: adminCredentials.name,
+          role: adminCredentials.role,
+        },
+      });
+    } else {
+      sendError(res, 401, "Invalid Email or Password");
+    }
+  } catch (error) {
+    console.log(error.message);
+    sendError(res, 500, "Server Error During Admin Login");
+  }
+};
+
 module.exports = {
   userRegister,
   userLogin,
@@ -283,4 +324,5 @@ module.exports = {
   adminGetAllUsers,
   AdminDeleteUser,
   adminUpdateUser,
+  adminLogin,
 };

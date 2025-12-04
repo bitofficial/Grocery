@@ -9,13 +9,15 @@ const {
 } = require("../Controllers/productController");
 const isAuthorized = require("../middleware/isAuthorized");
 const isAuthUser = require("../middleware/isAuthUser");
+const isAdminAuth = require("../middleware/isAdminAuth");
 const route = express.Router();
 
-route.post("/add", isAuthUser, isAuthorized, addProduct);
+// Admin-protected product endpoints: accept Bearer admin token via `isAdminAuth`
+route.post("/add", isAdminAuth, addProduct);
 route.get("/getAllProducts", getAllProduct);
 route.get("/recent/products", getRecentProducts);
 route.get("/getSingleProduct/:productId", getSingleProduct);
-route.put("/update/:productId", isAuthUser, isAuthorized, updateProduct);
-route.delete("/delete/:productId", isAuthUser, isAuthorized, deleteProduct);
+route.put("/update/:productId", isAdminAuth, updateProduct);
+route.delete("/delete/:productId", isAdminAuth, deleteProduct);
 
 module.exports = route;

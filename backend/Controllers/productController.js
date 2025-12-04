@@ -7,34 +7,34 @@ const { filterData } = require("../utils/filterQuery");
 const addProduct = async (req, res) => {
   try {
     const { name, rate, stocks, category, kilogramOption, image } = req.body;
-    if (kilogramOption.length == 1) {
-      sendError(res, 400, ["Weight: Required..!!"]);
-    } else {
-      const kgOption = [];
-      kilogramOption.map((kg) => {
-        kgOption.push(kg);
-      });
+    // normalize kilogram options
+    const kgOption = Array.isArray(kilogramOption) ? [...kilogramOption] : [];
 
+    // build product payload
+    const productPayload = {
+      name,
+      rate,
+      stocks,
+      category,
+      kilogramOption: kgOption,
+    };
+
+    // upload image only when provided
+    if (image) {
       const result = await coludinary.v2.uploader.upload(image, {
         folder: "products",
       });
-
-      const newProduct = productModel.create({
-        name,
-        rate,
-        stocks,
-        category,
-        kilogramOption: kgOption,
-        public_id: result.public_id,
-        url: result.url,
-      });
-
-      res.status(201).json({
-        success: true,
-        message: "Product Add SuccessFully..!!",
-        newProduct,
-      });
+      productPayload.public_id = result.public_id;
+      productPayload.url = result.url;
     }
+
+    const newProduct = productModel.create(productPayload);
+
+    res.status(201).json({
+      success: true,
+      message: "Product Add SuccessFully..!!",
+      newProduct,
+    });
   } catch (error) {
     sendError(res, 400, ["Somethings Went Wrong..!!"]);
   }
@@ -72,7 +72,8 @@ const updateProduct = async (req, res) => {
     const { name, rate, kilogramOption, category, stocks, image } = req.body;
     if (productId) {
       const isProductExit = productModel.findById(productId);
-      if (image !== "") {
+      // only upload/update image when provided (non-empty)
+      if (image) {
         const result = await coludinary.v2.uploader.upload(image, {
           folder: "products",
         });
